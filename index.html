@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amina Tahir | AI Researcher & Computer Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">AI PORTFOLIO</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#ms-project">MS Project</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+  <a class="btn-outline" href="AminaTahir-CV.pdf" download>Download CV</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="tag">AI • MACHINE LEARNING • RESEARCH</p>
+    <h1>AI Researcher<br>& Computer Scientist</h1>
+
+    <p class="desc">
+      Master’s student in Artificial Intelligence at NUST (SEECS) with strong
+      research focus in deep learning, medical AI, and intelligent systems.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="scrollToSection('ms-project')">
+        MS Research Project
+      </button>
+      <button class="btn-secondary" onclick="openContact()">
+        Contact for Collaboration
+      </button>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="profile.jpg" alt="Amina Tahir">
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div><h3>3+</h3><p>Years Experience</p></div>
+  <div><h3>6+</h3><p>Projects</p></div>
+  <div><h3>1</h3><p>MS Research Project</p></div>
+  <div><h3>1</h3><p>Publication</p></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am <strong>Amina Tahir</strong>, an AI Researcher and Computer Scientist
+    currently pursuing a Master’s degree in Artificial Intelligence at NUST (SEECS).
+    My work focuses on deep learning, medical AI, and intelligent systems.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section dark" id="skills">
+  <h2>Core Skills</h2>
+  <div class="skills-grid">
+    <div><strong>AI & ML</strong><br>Machine Learning, Deep Learning, CNNs, Transformers</div>
+    <div><strong>Medical AI</strong><br>Image Classification, Feature Fusion</div>
+    <div><strong>Programming</strong><br>Python, JavaScript, C++, PHP</div>
+    <div><strong>Frameworks</strong><br>TensorFlow, PyTorch</div>
+    <div><strong>Tools</strong><br>Git, Azure, VS Code</div>
+    <div><strong>Research</strong><br>Model Evaluation, Experimentation</div>
+  </div>
+</section>
+
+<!-- MS PROJECT -->
+<section class="section" id="ms-project">
+  <h2>Master’s Research Project</h2>
+
+  <div class="project clickable" onclick="openMSProject()">
+    <h3>Hybrid CNN–ViT Model for Early Diagnosis of Alzheimer’s Disease</h3>
+    <p>
+      Master’s level research project focused on medical image analysis using
+      deep learning. (Click for full details)
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section dark" id="projects">
+  <h2>Other Projects</h2>
+
+  <div class="project clickable" onclick="openProject('face')">
+    Face Detection & Attendance System
+  </div>
+
+  <div class="project clickable" onclick="openProject('auth')">
+    User Authentication System
+  </div>
+
+  <div class="project clickable" onclick="openProject('vccs')">
+    Vehicle Customer Care Service (VCCS)
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section" id="publications">
+  <h2>Publications</h2>
+  <p>
+    <strong>Hybrid CNN–ViT Model for Early Diagnosis of Alzheimer’s Disease</strong><br>
+    Research paper based on Master’s project.
+    <em>(Under review / PDF available on request)</em>
+  </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section dark" id="experience">
+  <h2>Experience</h2>
+
+  <p class="clickable" onclick="openExperience()">
+    <strong>AI Researcher</strong> <br>
+    Aug 2025 – Oct 2025
+  </p>
+
+  <p>
+    <strong>Instructor (Programming Languages)</strong><br>
+    Jan 2022 – Present
+  </p>
+  <p>
+    <strong>Web Designer</strong> — YCS Solutions<br>
+    Mar 2022 – Sep 2023
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Amina Tahir</p>
+  <p><a href="mailto:aminatahir570@gmail.com">aminatahir570@gmail.com</a></p>
+</footer>
+
+<!-- CONTACT MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContact()">&times;</span>
+    <h3>Contact</h3>
+    <p>Email: aminatahir570@gmail.com</p>
+  </div>
+</div>
+
+<!-- MS PROJECT MODAL -->
+<div id="msProjectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMSProject()">&times;</span>
+    <h3>Hybrid CNN–ViT Model for Alzheimer’s Disease</h3>
+    <p><strong>Degree:</strong> MS Artificial Intelligence (NUST SEECS)</p>
+    <p><strong>Problem:</strong> Early and accurate diagnosis of Alzheimer’s disease using medical imaging.</p>
+    <p><strong>Approach:</strong> Combined CNNs for local feature extraction with Vision Transformers for global contextual learning.</p>
+    <p><strong>Tools:</strong> Python, PyTorch, CNNs, Vision Transformers</p>
+    <p><strong>Outcome:</strong> Improved diagnostic performance through hybrid feature fusion.</p>
+  </div>
+</div>
+
+<!-- EXPERIENCE MODAL -->
+<div id="experienceModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeExperience()">&times;</span>
+    <h3>AI Researcher — Joyn Digital</h3>
+    <p>
+      Worked on AI research tasks including model experimentation,
+      data analysis, and development of intelligent solutions
+      for real-world applications.
+    </p>
+  </div>
+</div>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
+
+  function openContact() {
+    document.getElementById("contactModal").style.display = "flex";
+  }
+  function closeContact() {
+    document.getElementById("contactModal").style.display = "none";
+  }
+
+  function openMSProject() {
+    document.getElementById("msProjectModal").style.display = "flex";
+  }
+  function closeMSProject() {
+    document.getElementById("msProjectModal").style.display = "none";
+  }
+
+  function openExperience() {
+    document.getElementById("experienceModal").style.display = "flex";
+  }
+  function closeExperience() {
+    document.getElementById("experienceModal").style.display = "none";
+  }
+
+  function openProject(name) {
+    alert("Project details already highlighted in MS Project section.");
+  }
+</script>
+
+</body>
+</html>
